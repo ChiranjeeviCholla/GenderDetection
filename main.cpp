@@ -26,7 +26,8 @@ Net loadGenderNet() {
 }
 
 // Classify gender
-string classifyGender(Net& net, Mat& face) {
+string classifyGender(Net& net, Mat& face)
+ {
     Mat blob = blobFromImage(face, 1.0, Size(227, 227), Scalar(78.4263, 87.7689, 114.8958), false);
     net.setInput(blob);
     Mat prob = net.forward();
