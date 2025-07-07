@@ -83,8 +83,8 @@ int main() {
             cout << "Saved " << filename << endl;
         }
     }
-
+#chiru the king of coding
     cap.release();
     destroyAllWindows();
-    return 0;
+    return 1;
 }
